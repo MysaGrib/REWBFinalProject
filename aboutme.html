@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>AboutMe</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 about-page">
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-slash"></i> Michal Gříbek
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav"
+                    aria-expanded="false" aria-label="Přepnout navigaci">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                            <i class="bi bi-house-door"></i> Domů
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutme.html"><i class="bi bi-person"></i> O mně</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><i class="bi bi-code-slash"></i> Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html"><i class="bi bi-lightning-charge"></i> Dovednosti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="py-5">
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door"></i> Domů</a></li>
+                <li class="breadcrumb-item active" aria-current="page">O mně</li>
+            </ol>
+        </nav>
+
+        <div class="row align-items-center g-4 mt-1">
+            <div class="col-md-4">
+                <div class="about-photo-wrap">
+                    <img src="photos/user.png" alt="Michal Gříbek" class="about-photo">
+                    <span class="about-photo-badge"><i class="bi bi-geo-alt"></i> Ostrava</span>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1 class="page-title mb-4"><b>O mně</b></h1>
+                <div class="about-intro">
+                    <p class="fs-5 text-secondary mb-3">
+                        Jmenuji se Michal, studuji Softwarové systémy na Ostravské univerzitě
+                        a programuji i stříhám videa.
+                    </p>
+                    <p class="about-intro-body mb-0">
+                        Baví mě stavět věci od začátku do konce – skript, bota, web nebo krátké promo video.
+                        U kódu řeším, jak co funguje; u videa rytmus, zvuk a výslednou atmosféru.
+                    </p>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <a href="photos/CV.pdf" download class="btn btn-brand"><i class="bi bi-download"></i> Stáhnout CV</a>
+                    <a href="https://github.com/MysaGrib" target="_blank" rel="noopener" class="btn btn-outline-secondary">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="skills.html" class="btn btn-link link-brand">Moje dovednosti <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-5">
+    <div class="container">
+        <div class="stats-card">
+            <div class="stat">
+                <span class="stat-num">6+</span>
+                <span class="stat-label">vlastních projektů</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">6</span>
+                <span class="stat-label">programovacích jazyků</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">2</span>
+                <span class="stat-label">roky praxe s videem</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">B2</span>
+                <span class="stat-label">angličtina</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-5">
+    <div class="container">
+        <h2 class="section-title mb-4"><b>Pár informací o mně</b></h2>
+
+        <ul class="nav nav-pills about-tabs" id="aboutTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-edu" data-bs-toggle="tab" data-bs-target="#pane-edu"
+                        type="button" role="tab" aria-controls="pane-edu" aria-selected="true">
+                    <i class="bi bi-mortarboard"></i> Vzdělání
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-work" data-bs-toggle="tab" data-bs-target="#pane-work"
+                        type="button" role="tab" aria-controls="pane-work" aria-selected="false">
+                    <i class="bi bi-camera-reels"></i> Praxe
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-hobby" data-bs-toggle="tab" data-bs-target="#pane-hobby"
+                        type="button" role="tab" aria-controls="pane-hobby" aria-selected="false">
+                    <i class="bi bi-controller"></i> Zájmy a jazyky
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content about-tab-content p-4" id="aboutTabsContent">
+
+
+            <div class="tab-pane fade show active" id="pane-edu" role="tabpanel" aria-labelledby="tab-edu" tabindex="0">
+                <ul class="timeline mb-0">
+                    <li>
+                        <span class="when">2025 – současnost</span>
+                        <h3 class="h6 mb-0">Softwarové systémy</h3>
+                        <span class="text-secondary">Ostravská univerzita</span>
+                    </li>
+                    <li>
+                        <span class="when">2020 – 2024</span>
+                        <h3 class="h6 mb-0">Gymnázium Hladnov a Jazyková škola</h3>
+                        <span class="text-secondary">Ostrava</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-pane fade" id="pane-work" role="tabpanel" aria-labelledby="tab-work" tabindex="0">
+                <ul class="timeline mb-0">
+                    <li>
+                        <span class="when">duben 2026 – současnost</span>
+                        <h3 class="h6 mb-0">BrickBros, Ostrava</h3>
+                        <span class="text-secondary">Nápady na sociální sítě, natáčení a střih videí.</span>
+                    </li>
+                    <li>
+                        <span class="when">červenec – říjen 2025</span>
+                        <h3 class="h6 mb-0">FC Hlubina, Ostrava</h3>
+                        <span class="text-secondary">Nápady na sociální sítě, natáčení a střih videí.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-pane fade" id="pane-hobby" role="tabpanel" aria-labelledby="tab-hobby" tabindex="0">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h3 class="h6"><i class="bi bi-heart"></i> Zájmy</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge badge-brand fs-6 fw-medium">Technologie</span>
+                            <span class="badge badge-brand fs-6 fw-medium">Počítače</span>
+                            <span class="badge badge-brand fs-6 fw-medium">Videohry</span>
+                            <span class="badge badge-brand fs-6 fw-medium">Knihy a komiksy</span>
+                            <span class="badge badge-brand fs-6 fw-medium">Filmy</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="h6"><i class="bi bi-translate"></i> Jazyky</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li>Čeština – rodný jazyk</li>
+                            <li>Angličtina – pokročilá, certifikát úrovně B2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <h2 class="section-title mb-2"><b>Proč mě kontaktovat?</b></h2>
+        <p class="text-secondary mb-4">Tři věci, ve kterých vám můžu pomoct.</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <span class="icon-circle mb-3"><i class="bi bi-braces"></i></span>
+                        <h3 class="h5 card-title">Programování</h3>
+                        <p class="card-text text-secondary">
+                            Napíšu vám skript, bota nebo aplikaci na míru a pomůžu s webem.
+                            Programuju v Javě, Pythonu, PHP, C#, C++ či Kotlinu.
+                        </p>
+                        <span class="badge badge-brand">Python</span>
+                        <span class="badge badge-brand">Java</span>
+                        <span class="badge badge-brand">Kotlin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <span class="icon-circle mb-3"><i class="bi bi-scissors"></i></span>
+                        <h3 class="h5 card-title">Střih videa</h3>
+                        <p class="card-text text-secondary">
+                            Z natočeného materiálu sestříhám hotové video s ideálním tempem
+                            a čistým výsledným vzhledem pro Vámi vybranou sociální síť.
+                            Střihám v DaVinci Resolve, fotky upravuji v programu Krita.
+                        </p>
+                        <span class="badge badge-brand">DaVinci Resolve</span>
+                        <span class="badge badge-brand">Krita</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <span class="icon-circle mb-3"><i class="bi bi-phone"></i></span>
+                        <h3 class="h5 card-title">Reels a Shorty</h3>
+                        <p class="card-text text-secondary">
+                            Vymyslím nápad, natočím jej a následně sestříhám do krátkého videa pro sociální sítě.
+                            Zkušenost mám s tvorbou pro BrickBros či FC Hlubina.
+                        </p>
+                        <span class="badge badge-brand">Instagram</span>
+                        <span class="badge badge-brand">TikTok</span>
+                        <span class="badge badge-brand">YouTube Shorts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 cta-band cta-band-wave text-center">
+    <svg class="cta-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,0 L0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,0 Z" fill="#f8f9fa"/>
+    </svg>
+    <div class="container">
+        <h2 class="fw-bold">Měli byste zájem o spolupráci?</h2>
+        <p class="fs-5 mb-4">Ozvěte se a můžeme se domluvit podrobněji.</p>
+        <a href="contact.html" class="btn btn-light btn-lg"><i class="bi bi-envelope"></i> Napište mi</a>
+    </div>
+</section>
+
+<footer class="bg-dark text-light py-4 mt-auto" data-bs-theme="dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span class="text-secondary">&copy; 2026 Michal Gříbek · semestrální projekt</span>
+        <span class="d-flex gap-3 fs-5">
+            <a href="https://github.com/MysaGrib" target="_blank" rel="noopener" class="link-light" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:michal.gribek@email.cz" class="link-light" aria-label="E-mail"><i class="bi bi-envelope-at"></i></a>
+            <a href="contact.html" class="link-light" aria-label="Kontaktní formulář"><i class="bi bi-chat-dots"></i></a>
+        </span>
+    </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

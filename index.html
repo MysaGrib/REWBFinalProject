@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 index-page">
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-slash"></i> Michal Gříbek
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav"
+                    aria-expanded="false" aria-label="Přepnout navigaci">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <i class="bi bi-house-door"></i> Domů
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html"><i class="bi bi-person"></i> O mně</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><i class="bi bi-code-slash"></i> Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html"><i class="bi bi-lightning-charge"></i> Dovednosti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="home-flow">
+
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-6">
+                <p class="text-uppercase fw-bold mb-2 text-brand">Portfolio</p>
+                <h1 class="display-4 fw-bold">Jmenuji se <span class="hero-name">Michal</span>.</h1>
+                <p class="fs-5 text-secondary">
+                    Věnuji se hlavně <b>programování</b> a <b>videotvorbě</b>.
+                    Jsem <b>studentem Ostravské univerzity</b>. Programuji v Javě, Pythonu i PHP, videa stříhám v DaVinci Resolve.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <a href="projects.html" class="btn btn-brand btn-lg"><i class="bi bi-code-slash"></i> Moje projekty</a>
+                    <a href="contact.html" class="btn btn-outline-secondary btn-lg"><i class="bi bi-envelope"></i> Napsat mi</a>
+                    <a href="https://github.com/MysaGrib" target="_blank" rel="noopener" class="btn btn-link btn-lg link-brand">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div id="skillCarousel" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#skillCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img class="d-block w-100" src="photos/programming.jpg" alt="Programování">
+                            <div class="carousel-caption">
+                                <span class="carousel-kicker">01 ·</span>
+                                <h2>Programování</h2>
+                                <p>Weby, aplikace, skripty a boti. Java, Python, PHP, C# i C++ – od školních projektů po vlastní projekty.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img class="d-block w-100" src="photos/videoediting.jpg" alt="Videoediting">
+                            <div class="carousel-caption">
+                                <span class="carousel-kicker">02 ·</span>
+                                <h2>Střih, který udrží pozornost</h2>
+                                <p>Rytmus, čistý zvuk a barevné ladění. V DaVinci Resolve dotáhnu materiál do finální podoby na míru dané platformy.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img class="d-block w-100" src="photos/videmaking.jpg" alt="Videomaking">
+                            <div class="carousel-caption">
+                                <span class="carousel-kicker">03 ·</span>
+                                <h2>Od nápadu k hotovému videu</h2>
+                                <p>Reels a Shorts pro Instagram, TikTok i YouTube – scénář, natáčení, střih a publikace.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#skillCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Předchozí</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#skillCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Další</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-4 border-top border-bottom badge-section">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center gap-2">
+        <span class="fw-bold me-2"><i class="bi bi-braces braces-brand"></i> Programuji v:</span>
+        <span class="badge badge-brand fs-6 fw-medium">Java</span>
+        <span class="badge badge-brand fs-6 fw-medium">Python</span>
+        <span class="badge badge-brand fs-6 fw-medium">PHP</span>
+        <span class="badge badge-brand fs-6 fw-medium">HTML &amp; CSS</span>
+        <span class="badge badge-brand fs-6 fw-medium">C#</span>
+        <span class="badge badge-brand fs-6 fw-medium">C++</span>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <h2 class="section-title mb-0">Vybrané programovací projekty</h2>
+            <a href="projects.html" class="link-brand">Všechny projekty <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <span class="icon-circle mb-3"><i class="bi bi-youtube"></i><i class="bi bi-android2"></i></span>
+                        <h3 class="h5 card-title">YoutubeAdMute</h3>
+                        <p class="card-text text-secondary">Android aplikace, která automaticky ztlumí zvuk, když se na YouTube spustí reklama.</p>
+                        <span class="badge badge-brand">Kotlin</span>
+                        <span class="badge badge-brand">Android</span>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <a href="projects.html" class="btn btn-outline-dark btn-sm">
+                            <i class="bi bi-info-circle"></i> Více v projektech
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <span class="icon-circle mb-3"><i class="bi bi-discord"></i></span>
+                        <h3 class="h5 card-title">Discord bot</h3>
+                        <p class="card-text text-secondary">Bot v Pythonu, který pomáhá domluvit termíny společných setkání na Discordu.</p>
+                        <span class="badge badge-brand">Python</span>
+                        <span class="badge badge-brand">discord.py</span>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <a href="projects.html" class="btn btn-outline-dark btn-sm">
+                            <i class="bi bi-info-circle"></i> Více v projektech
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <span class="icon-circle mb-3"><i class="bi bi-window-fullscreen"></i></span>
+                        <h3 class="h5 card-title">Responzivní webové portfolio</h3>
+                        <p class="card-text text-secondary">Školní projekt: plnohodnotná responzivní webová stránka v Bootstrap frameworku.</p>
+                        <span class="badge badge-brand">HTML &amp; CSS </span>
+                        <span class="badge badge-brand">Bootstrap</span>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <a href="projects.html" class="btn btn-outline-dark btn-sm">
+                            <i class="bi bi-info-circle"></i> Více v projektech
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="videoSteps">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <h2 class="section-title mb-0">Jak vzniká video</h2>
+            <a href="projects.html" class="link-brand">Více o videotvorbě <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 p-3 text-center">
+                    <span class="step-num mx-auto mb-3">1</span>
+                    <h3 class="h5"><i class="bi bi-lightbulb text-brand"></i> Nápad</h3>
+                    <p class="text-secondary mb-0">Vymyslím téma a formát, který sedí k vaší značce a sociální síti.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 p-3 text-center">
+                    <span class="step-num mx-auto mb-3">2</span>
+                    <h3 class="h5"><i class="bi bi-camera-video text-brand"></i> Natáčení</h3>
+                    <p class="text-secondary mb-0">Nasnímám materiál s důrazem na záběry, světlo a zvuk.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 p-3 text-center">
+                    <span class="step-num mx-auto mb-3">3</span>
+                    <h3 class="h5"><i class="bi bi-scissors text-brand"></i> Střih</h3>
+                    <p class="text-secondary mb-0">V DaVinci Resolve video sestříhám a doladím zvuk i vzhled.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 p-3 text-center">
+                    <span class="step-num mx-auto mb-3">4</span>
+                    <h3 class="h5"><i class="bi bi-send text-brand"></i> Publikace</h3>
+                    <p class="text-secondary mb-0">Video exportuju ve správném formátu a je připravené k nahrání.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 cta-band text-center">
+    <div class="container">
+        <h2 class="fw-bold">Měli byste zájem o spolupráci?</h2>
+        <p class="fs-5 mb-4">Ozvěte se a můžeme se domluvit podrobněji.</p>
+        <a href="contact.html" class="btn btn-light btn-lg"><i class="bi bi-envelope"></i> Napište mi</a>
+    </div>
+</section>
+
+    <svg class="flow-line" viewBox="0 0 1200 2000" fill="none"
+         preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="flow-path"
+              d="M 600 0
+                 C 600 220, 600 300, 600 700
+                 C 600 1000, 250 980, 250 1250
+                 C 250 1500, 950 1480, 950 1700
+                 C 950 1870, 600 1850, 600 2000"
+              stroke="rgba(223, 4, 4, .28)" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+
+</main>
+
+
+<footer class="bg-dark text-light py-4 mt-auto" data-bs-theme="dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span class="text-secondary">&copy; 2026 Michal Gříbek · semestrální projekt</span>
+        <span class="d-flex gap-3 fs-5">
+            <a href="https://github.com/MysaGrib" target="_blank" rel="noopener" class="link-light" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:michal.gribek@email.cz" class="link-light" aria-label="E-mail"><i class="bi bi-envelope-at"></i></a>
+            <a href="contact.html" class="link-light" aria-label="Kontaktní formulář"><i class="bi bi-chat-dots"></i></a>
+        </span>
+    </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/flow-line.js"></script>
+</body>
+</html>

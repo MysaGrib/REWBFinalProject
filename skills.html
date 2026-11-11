@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 skills-page">
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-slash"></i> Michal Gříbek
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav"
+                    aria-expanded="false" aria-label="Přepnout navigaci">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                            <i class="bi bi-house-door"></i> Domů
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html"><i class="bi bi-person"></i> O mně</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><i class="bi bi-code-slash"></i> Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="skills.html"><i class="bi bi-lightning-charge"></i> Dovednosti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="pt-5 pb-3">
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door"></i> Domů</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dovednosti</li>
+            </ol>
+        </nav>
+
+        <div class="text-center mt-4">
+            <h1 class="fw-bold display-5 page-title">Moje dovednosti</h1>
+            <p class="fs-5 text-secondary mb-0">Čím programuju, v čem střihám a co všechno používám.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-4">
+    <div class="container">
+        <h2 class="h3 fw-bold mb-4"><i class="bi bi-braces"></i> Programovací jazyky</h2>
+
+        <div class="row g-4 justify-content-center">
+
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-cup-hot skill-icon"></i>
+                    <h3 class="h5">Java</h3>
+                    <span class="badge text-bg-warning">Mírně pokročilý</span>
+                    <p class="small text-secondary mt-2 mb-0">Objektové programování ve škole.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-filetype-py skill-icon"></i>
+                    <h3 class="h5">Python</h3>
+                    <span class="badge text-bg-warning">Mírně pokročilý</span>
+                    <p class="small text-secondary mt-2 mb-0">Lehčí skripty, boti a dovednosti ze školy</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-filetype-html skill-icon"></i>
+                    <h3 class="h5">HTML a CSS</h3>
+                    <span class="badge text-bg-warning">Mírně pokročilý</span>
+                    <p class="small text-secondary mt-2 mb-0">Responzivní weby s Bootstrapem.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-filetype-php skill-icon"></i>
+                    <h3 class="h5">PHP</h3>
+                    <span class="badge text-bg-secondary">Začátečník</span>
+                    <p class="small text-secondary mt-2 mb-0">Základy serverové části webu.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-filetype-cs skill-icon"></i>
+                    <h3 class="h5">C#</h3>
+                    <span class="badge text-bg-warning">Mírně pokročilý</span>
+                    <p class="small text-secondary mt-2 mb-0">Školní projekty a hry v Unity.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-braces-asterisk skill-icon"></i>
+                    <h3 class="h5">C++</h3>
+                    <span class="badge text-bg-secondary">Začátečník</span>
+                    <p class="small text-secondary mt-2 mb-0">Základy z výuky.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-android2 skill-icon"></i>
+                    <h3 class="h5">Kotlin</h3>
+                    <span class="badge text-bg-secondary">Začátečník</span>
+                    <p class="small text-secondary mt-2 mb-0">Jedna android aplikace.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="py-4">
+    <div class="container">
+        <h2 class="h3 fw-bold mb-4"><i class="bi bi-camera-video"></i> Video, grafika a jazyky</h2>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-scissors skill-icon"></i>
+                    <h3 class="h5">DaVinci Resolve</h3>
+                    <span class="badge text-bg-danger">Pokročilý</span>
+                    <p class="small text-secondary mt-2 mb-0">Střih videí pro sociální sítě.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-brush skill-icon"></i>
+                    <h3 class="h5">Krita</h3>
+                    <span class="badge text-bg-warning">Mírně pokročilý</span>
+                    <p class="small text-secondary mt-2 mb-0">Úprava fotek a grafiky.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-phone skill-icon"></i>
+                    <h3 class="h5">Reels a Shorty</h3>
+                    <span class="badge text-bg-dark">Praxe</span>
+                    <p class="small text-secondary mt-2 mb-0">Nápady, natáčení a střih (FC Hlubina, BrickBros).</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="skill-card h-100">
+                    <i class="bi bi-translate skill-icon"></i>
+                    <h3 class="h5">Angličtina</h3>
+                    <span class="badge text-bg-danger">Certifikát B2</span>
+                    <p class="small text-secondary mt-2 mb-0">Pokročilá znalost.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="h3 fw-bold mb-4"><i class="bi bi-table"></i> Přehled technologií, nástrojů a zájmů</h2>
+
+        <div class="table-card">
+            <table id="techTable" class="table table-striped table-hover align-middle" style="width:100%">
+                <thead>
+                <tr>
+                    <th>Název</th>
+                    <th>Kategorie</th>
+                    <th>Popis</th>
+                    <th>Využití</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Python</td><td>Programovací jazyk</td><td>Skripty, boti, automatizace</td><td>Škola / Projekt</td></tr>
+                <tr><td>Java</td><td>Programovací jazyk</td><td>Objektové programování</td><td>Škola</td></tr>
+                <tr><td>PHP</td><td>Programovací jazyk</td><td>Serverová část webu</td><td>Škola</td></tr>
+                <tr><td>C#</td><td>Programovací jazyk</td><td>Aplikace a hry</td><td>Škola / Hobby</td></tr>
+                <tr><td>C++</td><td>Programovací jazyk</td><td>Programování blízko hardwaru</td><td>Škola</td></tr>
+                <tr><td>Kotlin</td><td>Programovací jazyk</td><td>Android aplikace</td><td>Projekt</td></tr>
+                <tr><td>HTML</td><td>Web</td><td>Struktura webových stránek</td><td>Škola</td></tr>
+                <tr><td>CSS</td><td>Web</td><td>Vzhled a responzivní layout</td><td>Škola</td></tr>
+                <tr><td>JavaScript</td><td>Web</td><td>Interaktivita na stránce</td><td>Škola</td></tr>
+                <tr><td>Bootstrap 5</td><td>Framework</td><td>Responzivní komponenty</td><td>Škola</td></tr>
+                <tr><td>Bootstrap Icons</td><td>Knihovna</td><td>Ikony v menu a tlačítkách</td><td>Škola</td></tr>
+                <tr><td>jQuery</td><td>Knihovna</td><td>Práce s DOM, základ pro DataTables</td><td>Škola</td></tr>
+                <tr><td>DataTables</td><td>Knihovna</td><td>Tabulky s řazením a vyhledáváním</td><td>Škola</td></tr>
+                <tr><td>discord.py</td><td>Knihovna</td><td>Tvorba Discord botů v Pythonu</td><td>Projekt</td></tr>
+                <tr><td>SQL</td><td>Databáze</td><td>Dotazy nad relačními daty</td><td>Škola</td></tr>
+                <tr><td>Oracle SQL Developer Data Modeler</td><td>Databáze</td><td>Návrh databázových modelů</td><td>Škola</td></tr>
+                <tr><td>ER model</td><td>Databáze</td><td>Entity, atributy a vztahy</td><td>Škola</td></tr>
+                <tr><td>Relační databáze</td><td>Databáze</td><td>Tabulky, klíče, vazby</td><td>Škola</td></tr>
+                <tr><td>Normalizace dat</td><td>Databáze</td><td>Odstranění redundance</td><td>Škola</td></tr>
+                <tr><td>PhpStorm</td><td>Vývojové prostředí</td><td>Psaní webových projektů</td><td>Škola</td></tr>
+                <tr><td>Android Studio</td><td>Vývojové prostředí</td><td>Vývoj Android aplikací</td><td>Projekt</td></tr>
+                <tr><td>XAMPP</td><td>Nástroj</td><td>Lokální webový server</td><td>Škola</td></tr>
+                <tr><td>Git</td><td>Nástroj</td><td>Verzování zdrojového kódu</td><td>Škola / Projekt</td></tr>
+                <tr><td>GitHub</td><td>Nástroj</td><td>Hostování repozitářů</td><td>Škola / Projekt</td></tr>
+                <tr><td>GitHub Pages</td><td>Nástroj</td><td>Bezplatný hosting webu</td><td>Škola / Projekt</td></tr>
+                <tr><td>Unity</td><td>Herní engine</td><td>Tvorba her v C#</td><td>Hobby</td></tr>
+                <tr><td>Linux</td><td>Operační systém</td><td>Práce s linuxovým prostředím</td><td>Hobby</td></tr>
+                <tr><td>Příkazová řádka</td><td>Nástroj</td><td>Spouštění skriptů a práce se soubory</td><td>Škola / Hobby</td></tr>
+                <tr><td>Objektově orientované programování</td><td>Pojem</td><td>Třídy, dědičnost, polymorfismus</td><td>Škola</td></tr>
+                <tr><td>Algoritmy</td><td>Pojem</td><td>Návrh a analýza postupů řešení</td><td>Škola</td></tr>
+                <tr><td>Datové struktury</td><td>Pojem</td><td>Pole, seznamy, mapy</td><td>Škola</td></tr>
+                <tr><td>Responzivní design</td><td>Pojem</td><td>Web pro mobil i počítač</td><td>Škola</td></tr>
+                <tr><td>Wireframe</td><td>Pojem</td><td>Návrh rozložení stránky</td><td>Škola</td></tr>
+                <tr><td>Validace formulářů</td><td>Pojem</td><td>Kontrola zadaných údajů</td><td>Projekt</td></tr>
+                <tr><td>DaVinci Resolve</td><td>Video</td><td>Střih videí, pokročilá úroveň</td><td>Práce / Hobby</td></tr>
+                <tr><td>Střih videa</td><td>Video</td><td>Sestavení záběrů do celku</td><td>Práce / Hobby</td></tr>
+                <tr><td>Úprava zvuku</td><td>Video</td><td>Hlasitost, hudba a efekty</td><td>Práce / Hobby</td></tr>
+                <tr><td>Titulky</td><td>Video</td><td>Texty a titulky ve videu</td><td>Práce / Hobby</td></tr>
+                <tr><td>Barevné korekce</td><td>Video</td><td>Sjednocení vzhledu záběrů</td><td>Práce / Hobby</td></tr>
+                <tr><td>Natáčení</td><td>Video</td><td>Záběry, světlo a kompozice</td><td>Práce / Hobby</td></tr>
+                <tr><td>Scénář a nápady</td><td>Video</td><td>Vymýšlení obsahu pro sociální sítě</td><td>Práce / Hobby</td></tr>
+                <tr><td>Reels a Shorty</td><td>Video</td><td>Krátká videa pro sociální sítě</td><td>Práce / Hobby</td></tr>
+                <tr><td>Export videa</td><td>Video</td><td>Správný formát a kvalita</td><td>Práce / Hobby</td></tr>
+                <tr><td>Krita</td><td>Grafika</td><td>Úprava fotek, mírně pokročilá úroveň</td><td>Hobby</td></tr>
+                <tr><td>Úprava fotografií</td><td>Grafika</td><td>Ořez, korekce, retuš</td><td>Hobby</td></tr>
+                <tr><td>Angličtina</td><td>Jazyk</td><td>Pokročilá, certifikát B2</td><td>Škola / Práce</td></tr>
+                <tr><td>Čeština</td><td>Jazyk</td><td>Rodný jazyk</td><td>Každodenně</td></tr>
+                <tr><td>Počítače</td><td>Hardware</td><td>Sestavení a konfigurace</td><td>Hobby</td></tr>
+                <tr><td>Herní konzole</td><td>Hardware</td><td>Zájem o konzole a hry</td><td>Hobby</td></tr>
+                <tr><td>Elektronika</td><td>Hardware</td><td>Zájem o elektroniku</td><td>Hobby</td></tr>
+                <tr><td>Videohry</td><td>Zájem</td><td>Hraní a zájem o herní vývoj</td><td>Hobby</td></tr>
+                <tr><td>Knihy a komiksy</td><td>Zájem</td><td>Četba ve volném čase</td><td>Hobby</td></tr>
+                <tr><td>Softwarové systémy</td><td>Studium</td><td>Ostravská univerzita, od 2025</td><td>Škola</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-light py-4 mt-auto" data-bs-theme="dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span class="text-secondary">&copy; 2026 Michal Gříbek · semestrální projekt</span>
+        <span class="d-flex gap-3 fs-5">
+            <a href="https://github.com/MysaGrib" target="_blank" rel="noopener" class="link-light" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:michal.gribek@email.cz" class="link-light" aria-label="E-mail"><i class="bi bi-envelope-at"></i></a>
+            <a href="contact.html" class="link-light" aria-label="Kontaktní formulář"><i class="bi bi-chat-dots"></i></a>
+        </span>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#techTable').DataTable({
+            scrollX: true,
+            pageLength: 10,
+            lengthMenu: [5, 10, 25, 50],
+            order: [[0, 'asc']],
+            language: {
+                search: 'Hledat:',
+                lengthMenu: 'Zobrazit _MENU_ záznamů',
+                info: 'Záznamy _START_ až _END_ z _TOTAL_',
+                infoEmpty: 'Žádné záznamy',
+                infoFiltered: '(filtrováno z _MAX_ záznamů)',
+                zeroRecords: 'Nic nenalezeno',
+                paginate: { first: 'První', last: 'Poslední', next: 'Další', previous: 'Předchozí' }
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 projects-page">
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-slash"></i> Michal Gříbek
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav"
+                    aria-expanded="false" aria-label="Přepnout navigaci">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                            <i class="bi bi-house-door"></i> Domů
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html"><i class="bi bi-person"></i> O mně</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html"><i class="bi bi-code-slash"></i> Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html"><i class="bi bi-lightning-charge"></i> Dovednosti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="projects-flow">
+
+
+    <section class="pt-5 pb-3">
+        <div class="container">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door"></i> Domů</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Projekty</li>
+                </ol>
+            </nav>
+
+            <div class="text-center mt-4">
+                <h1 class="fw-bold display-5 page-title">Moje projekty</h1>
+                <p class="fs-5 text-secondary mb-0">Výběr toho, na čem jsem pracoval. Více najdete na
+                    <a href="https://github.com/MysaGrib" target="_blank" rel="noopener" class="link-brand">mém GitHubu <i class="bi bi-box-arrow-up-right"></i></a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-4">
+        <div class="container">
+            <h2 class="h3 fw-bold mb-4"><i class="bi bi-code-slash"></i> Programování</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card h-100">
+                        <div class="project-cover">
+                            <span class="project-num">01</span>
+                            <i class="bi bi-android2"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="mb-2">
+                                <span class="badge text-bg-danger">Kotlin</span>
+                                <span class="badge text-bg-dark">Android</span>
+                            </div>
+                            <h3 class="h5">YoutubeAdMute</h3>
+                            <p class="text-secondary">Android aplikace, která automaticky ztlumí zvuk, když se na YouTube spustí reklama.</p>
+                            <button type="button" class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                    data-title="YoutubeAdMute"
+                                    data-num="01"
+                                    data-icon="bi bi-android2"
+                                    data-desc="Android aplikace napsaná v Kotlinu. Rozpozná, že se na YouTube přehrává reklama, a po dobu reklamy automaticky ztlumí zvuk telefonu. Po skončení reklamy se zvuk vrátí."
+                                    data-tech="Kotlin, Android"
+                                    data-learned="Práce s Android Studiem a se systémovými službami telefonu."
+                                    data-link="https://github.com/MysaGrib/YoutubeAdMute">
+                                Více informací <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card h-100">
+                        <div class="project-cover">
+                            <span class="project-num">02</span>
+                            <i class="bi bi-discord"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="mb-2">
+                                <span class="badge text-bg-danger">Python</span>
+                                <span class="badge text-bg-dark">discord.py</span>
+                            </div>
+                            <h3 class="h5">Discord bot</h3>
+                            <p class="text-secondary">Bot v Pythonu, který pomáhá domluvit termíny společných setkání na Discordu.</p>
+                            <button type="button" class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                    data-title="Discord bot pro plánování"
+                                    data-num="02"
+                                    data-icon="bi bi-discord"
+                                    data-desc="Discord bot v Pythonu s knihovnou discord.py. Pomocí příkazu založí hlasování o dalším termínu a upozorní příslušnou roli na serveru, aby se členové skupiny snáze domluvili."
+                                    data-tech="Python, discord.py"
+                                    data-learned="Práce s asynchronním programováním a s Discord API."
+                                    data-link="https://github.com/MysaGrib/DiscordScheduleBot">
+                                Více informací <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card h-100">
+                        <div class="project-cover">
+                            <span class="project-num">03</span>
+                            <i class="bi bi-window-sidebar"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="mb-2">
+                                <span class="badge text-bg-danger">HTML &amp; CSS</span>
+                                <span class="badge text-bg-dark">Bootstrap</span>
+                            </div>
+                            <h3 class="h5">Responzivní webové portfolio</h3>
+                            <p class="text-secondary">Školní projekt: plnohodnotná responzivní webová stránka v Bootstrap frameworku.</p>
+                            <button type="button" class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                    data-title="Responzivní webové portfolio"
+                                    data-num="03"
+                                    data-icon="bi bi-window-sidebar"
+                                    data-desc="Víceúrovňový responzivní web, který právě prohlížíte. Obsahuje carousel, záložky, modální okno, tabulku s vyhledáváním a formulář."
+                                    data-tech="HTML, CSS, JavaScript, Bootstrap 5"
+                                    data-learned="Responzivní layout, komponenty Bootstrapu a nasazení na GitHub Pages."
+                                    data-link="https://github.com/MysaGrib/REWBFinalProject">
+                                Více informací <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card h-100">
+                        <div class="project-cover">
+                            <span class="project-num">04</span>
+                            <i class="bi bi-database"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="mb-2">
+                                <span class="badge text-bg-danger">SQL</span>
+                                <span class="badge text-bg-dark">ER model</span>
+                            </div>
+                            <h3 class="h5">Datový model knihovny</h3>
+                            <p class="text-secondary">Školní projekt: návrh databáze knihovny od konceptuálního po logický model.</p>
+                            <button type="button" class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                    data-title="Datový model knihovny"
+                                    data-num="04"
+                                    data-icon="bi bi-database"
+                                    data-desc="Návrh databáze knihovny v nástroji Oracle SQL Developer Data Modeler: entity, atributy a vztahy mezi nimi, od konceptuálního po logický model."
+                                    data-tech="Oracle SQL Developer Data Modeler, SQL, ER model"
+                                    data-learned="Návrh entit, vztahů a klíčů v relační databázi."
+                                    data-link="">
+                                Více informací <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card h-100">
+                        <div class="project-cover">
+                            <span class="project-num">05</span>
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="mb-2">
+                                <span class="badge text-bg-danger">PHP</span>
+                                <span class="badge text-bg-dark">Nette</span>
+                            </div>
+                            <h3 class="h5">Webová aplikace zápisu rozvrhu</h3>
+                            <p class="text-secondary">Webová aplikace, ve které se mohou studenti zapisovat na vypsané termíny zápočtů/zkoušek a případně se z nich odepisovat</p>
+                            <button type="button" class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                    data-title="Webová aplikace zápisu rozvrhu"
+                                    data-num="05"
+                                    data-icon="bi bi-calendar-check"
+                                    data-desc="Webová aplikace, ve které se mohou studenti zapisovat na vypsané termíny zápočtů/zkoušek a případně se z nich odepisovat. Aplikace pracuje s databází MySQL a využívá frameworku Nette."
+                                    data-tech="PHP, HTML, MySQL, Nette"
+                                    data-learned="Práce s PHP, propojení webové aplikace s databází MySQL, Práce s frameworkem Nette."
+                                    data-link="">
+                                Více informací <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card h-100">
+                        <div class="project-cover">
+                            <span class="project-num">06</span>
+                            <i class="bi bi-question"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="mb-2">
+                                <span class="badge text-bg-secondary">Připravuje se</span>
+                            </div>
+                            <h3 class="h5">Další projekty...</h3>
+                            <p class="text-secondary">Na dalších projektech se již pracuje...</p>
+                            <button type="button" class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                    data-title="Další projekty"
+                                    data-num="06"
+                                    data-icon="bi bi-question"
+                                    data-desc="Na dalších projektech se již pracuje..."
+                                    data-tech=""
+                                    data-learned="..."
+                                    data-link="">
+                                Více informací <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="h3 fw-bold mb-2"><i class="bi bi-camera-reels"></i> Videotvorba – ukázky shortů</h2>
+            <p class="text-secondary mb-4">Dva shorty pro sociální sítě, které jsem natočil a sestříhal.</p>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-8 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card card-hover p-2">
+                        <div class="ratio reel-ratio">
+                            <video controls preload="metadata">
+                                <source src="videos/RadniceOprava.mp4" type="video/mp4">
+                                Váš prohlížeč nepodporuje přehrávání videa.
+                            </video>
+                        </div>
+                        <div class="card-body px-1 pb-1">
+                            <h3 class="h6 mb-0">BrickBros - Ostravská Radnice</h3>
+                            <small class="text-secondary">Promo reel na produkt firmy BrickBros</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card card-hover p-2">
+                        <div class="ratio reel-ratio">
+                            <video controls preload="metadata">
+                                <source src="videos/BBPuzzleBlock.mp4" type="video/mp4">
+                                Váš prohlížeč nepodporuje přehrávání videa.
+                            </video>
+                        </div>
+                        <div class="card-body px-1 pb-1">
+                            <h3 class="h6 mb-0">BrickBros - Puzzle Block</h3>
+                            <small class="text-secondary">Promo reel na produkt firmy BrickBros</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <svg class="flow-line" viewBox="0 0 1200 2000" fill="none"
+         preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="flow-path"
+              d="M 600 0
+                 C 600 130, 240 120, 240 250
+                 C 240 380, 960 370, 960 500
+                 C 960 630, 240 620, 240 750
+                 C 240 880, 960 870, 960 1000
+                 C 960 1130, 240 1120, 240 1250
+                 C 240 1380, 960 1370, 960 1500
+                 C 960 1630, 240 1620, 240 1750
+                 C 240 1880, 600 1870, 600 2000"
+              stroke="rgba(223, 4, 4, .32)" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+
+</main>
+
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+        <div class="modal-content">
+            <div class="modal-banner">
+                <button type="button" class="btn-close btn-close-white modal-banner-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+                <span class="modal-banner-num" id="modalNum">01</span>
+                <p class="modal-banner-kicker" id="modalCat">Programování</p>
+                <h2 class="modal-title" id="projectModalLabel">Projekt</h2>
+                <i class="modal-banner-icon bi bi-code-slash" id="modalIcon" aria-hidden="true"></i>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-lg-7" id="modalInfo">
+                        <p id="modalDesc" class="modal-desc"></p>
+
+                        <div id="modalLearnedWrap" class="d-none">
+                            <h3 class="h6 text-secondary mt-4">Co jsem se naučil</h3>
+                            <p id="modalLearned" class="mb-0"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" id="modalTechCol">
+                        <div class="modal-meta">
+                            <h3 class="h6">Použité technologie</h3>
+                            <div id="modalTech" class="modal-tech"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a id="modalLink" href="#" target="_blank" rel="noopener" class="btn btn-outline-dark">
+                    <i class="bi bi-github"></i> Zobrazit na GitHubu
+                </a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-light py-4 mt-auto" data-bs-theme="dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span class="text-secondary">&copy; 2026 Michal Gříbek · semestrální projekt</span>
+        <span class="d-flex gap-3 fs-5">
+            <a href="https://github.com/MysaGrib" target="_blank" rel="noopener" class="link-light" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:michal.gribek@email.cz" class="link-light" aria-label="E-mail"><i class="bi bi-envelope-at"></i></a>
+            <a href="contact.html" class="link-light" aria-label="Kontaktní formulář"><i class="bi bi-chat-dots"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+    const projectModal = document.getElementById('projectModal');
+
+    projectModal.addEventListener('show.bs.modal', (event) => {
+        const btn = event.relatedTarget;
+
+        const techs = (btn.dataset.tech || '')
+            .split(',')
+            .map(t => t.trim())
+            .filter(Boolean);
+
+        const learned = (btn.dataset.learned || '').trim();
+        const hasLearned = learned.length > 3;
+        const hasTech = techs.length > 0;
+
+        projectModal.querySelector('#modalNum').textContent = btn.dataset.num || '';
+        projectModal.querySelector('#modalCat').textContent = btn.dataset.cat || 'Programování';
+        projectModal.querySelector('.modal-title').textContent = btn.dataset.title;
+        projectModal.querySelector('#modalDesc').textContent = btn.dataset.desc;
+
+        projectModal.querySelector('#modalIcon').className =
+            'modal-banner-icon ' + (btn.dataset.icon || 'bi bi-code-slash');
+
+        projectModal.querySelector('#modalLearnedWrap').classList.toggle('d-none', !hasLearned);
+        projectModal.querySelector('#modalLearned').textContent = hasLearned ? learned : '';
+
+        const infoCol = projectModal.querySelector('#modalInfo');
+        infoCol.classList.toggle('col-lg-7', hasTech);
+        infoCol.classList.toggle('col-lg-12', !hasTech);
+        projectModal.querySelector('#modalTechCol').classList.toggle('d-none', !hasTech);
+        projectModal.querySelector('.modal-body').classList.toggle('is-minimal', !hasTech && !hasLearned);
+
+        projectModal.querySelector('#modalTech').innerHTML = techs
+            .map(t => `<span class="badge text-bg-danger">${t}</span>`)
+            .join('');
+
+        const link = projectModal.querySelector('#modalLink');
+        if (btn.dataset.link) {
+            link.href = btn.dataset.link;
+            link.classList.remove('d-none');
+        } else {
+            link.classList.add('d-none');
+        }
+    });
+</script>
+
+<script src="js/flow-line.js"></script>
+</body>
+</html>
